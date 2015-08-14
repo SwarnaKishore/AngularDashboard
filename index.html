@@ -107,7 +107,7 @@
                             <a href="#"><i class="fa fa-shopping-cart fa-fw"></i> Customer Orders<span class="fa arrow"></span></a>
                             <ul id="menu" class="nav nav-second-level">
                                 <li>
-                                    <a href="#">View Orders</a>
+                                    <a class="PageTop" href="#">View Orders</a>
                                 </li>
                                 
                             </ul>
@@ -118,13 +118,13 @@
                             <a href="#"><i class="fa fa-comments fa-fw"></i> Collaboration Wall<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#viewActivityStream">View Activity Stream</a>
+                                    <a class="PageTop" href="#careerAgentPostAndCommentsActivity">View Activity Stream</a>
                                 </li>
                                 <li>
-                                    <a href="#viewContacts">View Contacts</a>
+                                    <a class="PageTop" href="#viewContacts">View Contacts</a>
                                 </li>
                                 <li>
-                                    <a href="#">Pending Shares</a>
+                                    <a class="PageTop" href="#">Pending Shares</a>
                                 </li>
                             
                             </ul>
@@ -134,13 +134,13 @@
                             <a href="#"><i class="fa fa-users"></i> Groups<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#createGroup">Create Group</a>
+                                    <a class="PageTop" href="#createGroup">Create Group</a>
                                 </li>
                                 <li>
-                                    <a href="#groupsView">View</a>
+                                    <a class="PageTop" href="#groupsView">View</a>
                                 </li>
                                 <li>
-                                    <a href="#groupsBroadcast">Broadcast</a>
+                                    <a class="PageTop" href="#groupsBroadcast">Broadcast</a>
                                 </li>
                                 
                             </ul>
@@ -176,23 +176,23 @@
                         </li>
 
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a class="PageTop" href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-shopping-cart fa-fw"></i>Order status</a>
+                            <a class="PageTop" href="#"><i class="fa fa-shopping-cart fa-fw"></i>Order status</a>
                         </li>
                         
                         <li>
                             <a href="#"><i class="fa fa-comments fa-fw"></i> Collaboration Wall<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#customerPostSomething">Post Something</a>
+                                    <a class="PageTop" href="#customerPostSomething">Post Something</a>
                                 </li>
                                 <li>
-                                    <a href="#viewCustomerActivityStream">View Activity Stream</a>
+                                    <a class="PageTop" href="#viewCustomerActivityStream">View Activity Stream</a>
                                 </li>
                                 <li>
-                                    <a href="#">Pending Shares</a>
+                                    <a class="PageTop" href="#">Pending Shares</a>
                                 </li>
                             
                             </ul>
@@ -249,6 +249,12 @@
       $('#menu').metisMenu();
     
     });
+
+    $(".PageTop").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  
+});
+
   </script>
 </body>
 
