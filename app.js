@@ -4,8 +4,8 @@ var app = angular.module('app', ['ngRoute']);
 app.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/viewActivityStream', {
-	templateUrl: 'templates/viewActivityStream.html'
+      when('/careerAgentPostAndCommentsActivity', {
+	templateUrl: 'templates/careerAgentPostAndCommentsActivity.html'
       }).
       when('/viewContacts', {
 	templateUrl: 'templates/viewContacts.html'
@@ -29,6 +29,6 @@ app.config(['$routeProvider',
 	templateUrl: 'templates/viewCustomerActivityStream.html'
       }).
       otherwise({
-	redirectTo: '/viewActivityStream'
+	redirectTo: '/careerAgentPostAndCommentsActivity'
       });
 }]);
