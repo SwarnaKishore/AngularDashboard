@@ -5,7 +5,7 @@ app.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/careerAgentPostAndCommentsActivity', {
-	templateUrl: 'templates/careerAgentPostAndCommentsActivity.html'
+	templateUrl: 'templates/viewCustomerActivityStream.html'
       }).
       when('/viewContacts', {
 	templateUrl: 'templates/viewContacts.html'
@@ -15,6 +15,9 @@ app.config(['$routeProvider',
       }).
       when('/viewContacts', {
 	templateUrl: 'templates/viewContacts.html'
+      }).
+       when('/viewOrders', {
+  templateUrl: 'templates/viewOrders.html'
       }).
        when('/groupsView', {
 	templateUrl: 'templates/groupsView.html'
