@@ -5,7 +5,10 @@ app.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/careerAgentPostAndCommentsActivity', {
-	templateUrl: 'templates/viewCustomerActivityStream.html'
+	templateUrl: 'templates/careerAgentPostAndCommentsActivity.html'
+      }).
+      when('/defaultView', {
+  templateUrl: 'templates/defaultView.html'
       }).
       when('/viewContacts', {
 	templateUrl: 'templates/viewContacts.html'
@@ -32,6 +35,6 @@ app.config(['$routeProvider',
 	templateUrl: 'templates/viewCustomerActivityStream.html'
       }).
       otherwise({
-	redirectTo: '/careerAgentPostAndCommentsActivity'
+	redirectTo: '/defaultView'
       });
 }]);
